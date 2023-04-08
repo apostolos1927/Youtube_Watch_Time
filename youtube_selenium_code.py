@@ -102,7 +102,8 @@ def run_video(link):
         replay(driver)
     except Exception as e:
         print("Exception is ", e)
-        pass
+        driver.close()
+        driver.quit()
 
 
 if __name__ == "__main__":
